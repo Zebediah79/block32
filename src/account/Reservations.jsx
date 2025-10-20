@@ -3,7 +3,6 @@ import { Link } from "react-router";
 import { deleteReservation, getReservations } from "../api/reservations";
 import { useAuth } from "../auth/AuthContext";
 
-/** List of all books that the user has reserved */
 export default function Reservations() {
   const { token } = useAuth();
   const [reservations, setReservations] = useState([]);

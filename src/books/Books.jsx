@@ -1,10 +1,8 @@
 import { Link } from "react-router";
 import { useState, useEffect } from "react";
 import { getBooks } from "../api/books";
-
 import "./books.css";
 
-/** Page that displays all books in the catalog */
 export default function Books() {
   const [books, setBooks] = useState([]);
 

@@ -1,6 +1,5 @@
 const API = import.meta.env.VITE_API;
 
-/** Fetches account details of logged-in user */
 export async function getAccount(token) {
   if (!token) throw Error("You are not logged in.");
 

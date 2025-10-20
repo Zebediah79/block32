@@ -1,13 +1,10 @@
 import { Link } from "react-router";
 import { useState, useEffect } from "react";
-
 import { getAccount } from "../api/users";
 import { useAuth } from "../auth/AuthContext";
 import Reservations from "./Reservations";
-
 import "./account.css";
 
-/** User's account page with their information and reservations */
 export default function Account() {
   const { token } = useAuth();
   const [account, setAccount] = useState(null);

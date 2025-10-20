@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router";
 import { getBook } from "../api/books";
 import { createReservation } from "../api/reservations";
 
-/** Details about a single book */
 export default function Book() {
   const { token } = useAuth();
   const { id } = useParams();

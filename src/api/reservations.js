@@ -1,6 +1,5 @@
 const API = import.meta.env.VITE_API;
 
-/** Fetches reservations of logged-in user */
 export async function getReservations(token) {
   if (!token) throw Error("You are not logged in.");
 
@@ -16,7 +15,6 @@ export async function getReservations(token) {
   }
 }
 
-/** Sends a request to create a new reservation for a book by ID */
 export async function createReservation(token, bookId) {
   if (!token) throw Error("You are not logged in.");
 
@@ -35,7 +33,6 @@ export async function createReservation(token, bookId) {
   }
 }
 
-/** Sends a request to delete a reservation by ID */
 export async function deleteReservation(token, id) {
   if (!token) throw Error("You are not logged in.");
 
